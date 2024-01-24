@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Data to File</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+    <script>
+        $(document).ready(function () {
+            // Замените URL на свой бэкенд-эндпоинт
+            const apiUrl = 'PHP/getOilType.php';
+
+            // Отправка запроса на сервер для получения данных
+            $.ajax({
+                url: apiUrl,
+                method: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    // Вызываем функцию для сохранения данных в файл
+                    saveDataToFile(data);                    
+                },
+                error: function (error) {
+                    console.error('Failed to fetch data:', error);
+                }
+            });
+
+            function saveDataToFile(data) {
+                // Преобразование данных в формат JSON
+                const jsonData = JSON.stringify(data, null, 2);
+
+                // Создание Blob из данных JSON
+                const blob = new Blob([jsonData], { type: 'application/json' });
+
+                const now = new Date();    
+                const datePart = now.toISOString().slice(0, 10);
+                const fileName = `Fuel ${datePart} Hour:${now.getHours()} Min:${now.getMinutes()}.json`;
+
+
+                const a = document.createElement('a');
+                a.href = URL.createObjectURL(blob);
+                a.download = fileName;
+
+                // Автоматическое нажатие на ссылку для скачивания файла
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+
+                // Закрываем вкладку через некоторое время (например, 3 секунды)
+                setTimeout(function() {
+                    window.close();
+                }, 3000);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+body {
+    background-color: #f1f4f8 !important;
+  }
+.form-group {
+    margin-bottom: 1rem;
+  }
+  label {
+    display: inline-block;
+    margin-bottom: .5rem;
+  }
+  .btn-primary, .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    color: #fff !important;
+    background-color: #7c69ef !important;
+    border-color: #7c69ef !important;
+  }
+  .btn-block {
+    display: block !important;
+    width: 100% !important;
+  }
+  .btn-primary:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: #fff !important;
+    background-color: #6852ed !important;
+    border-color: #6852ed !important;
+  }
+  .btn:hover, .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: #495057 !important;
+    text-decoration: none !important;
+  }
+  .btn:hover {
+    color: var(--bs-btn-hover-color) !important;
+  }
