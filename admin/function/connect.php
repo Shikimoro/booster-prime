@@ -1,8 +1,8 @@
 <?php 
-$user = "almazv87_nework";
-$password = "123456_ANT";
-$host = "almazv87.beget.tech";
-$db = "almazv87_nework";
+$user = "XXXXXXXXXXXXX";
+$password = "XXXXXXXXXXXXX";
+$host = "XXXXXXXXXXXXX.XXXXXXXXXXXXX";
+$db = "XXXXXXXXXXXXX";
 $dbh = 'mysql:host='.$host.';dbname='.$db;
 $pdo =new PDO($dbh,$user,$password);
 ?>
