@@ -105,6 +105,12 @@ document.getElementById('inputSum').addEventListener('keydown', function (event)
     event.preventDefault();
 }
 });
+document.getElementById('inputOrderId').addEventListener('keydown', function (event) {    
+  if (!((event.key >= '0' && event.key <= '9') || event.key === 'Enter' || event.key === 'Backspace')) {
+
+    event.preventDefault();
+}
+});
 
  
 const form = document.getElementById("open-modal");
@@ -242,7 +248,6 @@ function ZXC(e){
  
 }
 function checkOrderStatus(){
-  $("#ModalCheckOrderStatus").modal("show");
   var inputOrderId = $("#inputOrderId").val();
     $.ajax({
         url: 'functions/checkOrderStatus.php',
@@ -252,6 +257,7 @@ function checkOrderStatus(){
             id: inputOrderId
         },
         success: function (res) {
+        $("#ModalCheckOrderStatus").modal("show");
         let result = res[0];
         document.getElementById("modalOrderId").textContent = "Номер заказа : " + " " + result.id;
         document.getElementById("modalOrderNumber").textContent = "Номер телефона : "+ " " + result.phone_number ;
@@ -262,7 +268,7 @@ function checkOrderStatus(){
        
          },
          error: function (xhr, status, error) {
-          console.error('AJAX request failed:', status, error);
+          $("#ModalCheckOrderStatusError").modal("show");
         }
 });
 }
