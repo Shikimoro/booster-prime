@@ -193,15 +193,7 @@
                         </div>
                     </div>
                 </div>
-<<<<<<< Updated upstream
                 <!-- MAPBOX --> 
-=======
-                <!-- MAPBOX --> <!-- MAPBOX --><!-- MAPBOX --> <!-- MAPBOX --> <!-- MAPBOX --><!-- MAPBOX -->
-                <!-- MAPBOX --> <!-- MAPBOX --><!-- MAPBOX -->
-
-
-
->>>>>>> Stashed changes
                 <div class="mobBottomForm row no-gutters mt-3 " style="padding-left:0;">
                     <div class="form-row form p-0 m-0">
                         <div class="order-time-class form-floating mb-3 col-sm-12 col-md-6 col-lg-3"
@@ -230,8 +222,6 @@
         </form>
     </div>
     <!-- ORDERS -->>
-    <!-- MAPBOX --> 
-
     <div class="form-row row no-gutters form mt-5 p-2 col-12" style="padding-left: 12px !important;">
         <div id="open-modal" class="col-md-6 col-lg-3 col-sm-12 col-xs-12 mb-3 form-floating">
             <input id="inputOrderId" type="text" class="form-control" name="inputOrderId" placeholder="Номер заказа"
