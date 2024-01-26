@@ -234,7 +234,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
       </div>
       <div class="modal-body">
-        <span>Заказ не найден либо некорректный номер заказа</span>
+        <span>Заказ не найден либо некорректный номер заказа!!!</span>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
