@@ -191,6 +191,18 @@ footer {
 	.tagline{
 		text-align: center;
 	}
+	.mobBottomForm{
+		padding: 0 !important;
+	}
+	.order-time-class{
+		padding: 0 !important;
+	}
+	.create-order-button{
+		padding: 0 !important;
+	}
+	.mapboxgl-map{
+		display: none;
+	}
 }
 #loader-container {
 	position: absolute;
