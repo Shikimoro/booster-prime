@@ -91,7 +91,7 @@
                     <div class="d-flex justify-content-center mt-3 mb-3"
                         style=" color: #fff; font-size: 16px; font-family: 'Roboto', sans-serif;">Цена за 1 л <span
                             class="fuel-price" id="oil-price">58.5 ₽</span></div>
-                    <div class="form-row form">
+                    <div class="form-row form pb-2">
                         <div class="col-md-6 col-lg-6 col-sm-12-col-xs-12 form-floating mb-3">
                             <input id="inputAmount" type="number" autocomplete="off" step="any" required=""
                                 class="form-control" name="inputAmount"
@@ -155,11 +155,8 @@
 
                         </div>
                     </div>
-
-
                 </div>
                 <!-- MAPBOX -->
-
                 <div class="col-lg-6 map-div" style="  padding-left: 20px;">
                     <div id="map" style="width: 100%;height: 100%;" class="mapboxgl-map">
                         <div class="mapboxgl-canary" style="visibility: hidden;"></div>
@@ -197,8 +194,7 @@
                     </div>
                 </div>
                 <!-- MAPBOX --> 
-
-                <div class="row no-gutters mt-3 " style="padding-left:0;">
+                <div class="mobBottomForm row no-gutters mt-3 " style="padding-left:0;">
                     <div class="form-row form p-0 m-0">
                         <div class="order-time-class form-floating mb-3 col-sm-12 col-md-6 col-lg-3"
                             style="padding-left: 0px;">
@@ -210,13 +206,14 @@
                             <label for="inputDeliveryTime">Время доставки</label>
                         </div>
                         <div class="create-order-button  mb-3 col-sm-12 col-md-6 col-lg-3 pr-0 pl-1">
-                            <button id="checkOrderStatus" type="submit" class="btn btn-primary" style="color: #000000;
+                            <button id="addOrder" type="submit" class="btn btn-primary" style="color: #000000;
                                 width: 100%;
                                        font-size: 20px;
                                        font-weight: 500;
                                        padding: 12px 56px;
                                        font-family: 'Roboto', sans-serif;
-                                       background-color: #FFD500;border-radius: 4px;">Заказать
+                                       background-color: #FFD500;border-radius: 4px;
+                                       height:58px;">Заказать
                             </button>
                         </div>
                     </div>
@@ -224,7 +221,8 @@
             </div>
         </form>
     </div>
-    <!-- ORDERS -->
+    <!-- ORDERS -->>
+    <!-- MAPBOX --> 
 
     <div class="form-row row no-gutters form mt-5 p-2 col-12" style="padding-left: 12px !important;">
         <div id="open-modal" class="col-md-6 col-lg-3 col-sm-12 col-xs-12 mb-3 form-floating">
@@ -237,7 +235,7 @@
         </div>
         <div class="col-md-6 col-lg-3 col-sm-12 col-xs-12 mb-3" style="padding-right: 0px !important;">
             <button id="checkOrderStatus" onclick="checkOrderStatus()" class="btn"
-                style="line-height: 43px; font-family: Roboto, sans-serif;font-style: normal;font-weight: 500;font-size: 20px; background-color: #FFD500;width: 100%;">
+                style="line-height: 43px; font-family: Roboto, sans-serif;font-style: normal;font-weight: 500;font-size: 20px; background-color: #FFD500;width: 100%; height:58px;">
                 Проверить заказ
             </button>
         </div>
